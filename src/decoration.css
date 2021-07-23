@@ -1,0 +1,32 @@
+/* css decoração */
+
+  button {
+    border: 1px solid white;
+    background: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50%;
+    color: blue;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    animation: butt;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+  }
+  
+  
+  button:hover {
+    background: rgb(53, 48, 48);
+    color: white;
+  }
+  
+@keyframes butt{
+    from{
+        opacity: 0s;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 0s;
+        transform: translateX(0px)
+    }
+}
