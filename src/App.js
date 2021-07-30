@@ -8,16 +8,7 @@ const Project = () => {
 
   const [state, setState] = useState(0);
   const { name, job, image } = people[state];
-  const [stateapi, setusingAPI] = useState([]);
   const ref = useRef(0);
-
-  //consumo da api
-
-  useEffect(
-    () => {
-      axios.get('http://localhost:3005/persons').then(response => setusingAPI(response));
-    }, []
-  );
 
   useEffect(
     () => {
@@ -38,7 +29,7 @@ const Project = () => {
 
           {/* primeiro botão */}
 
-          <div id="button"><button key={stateapi} onClick={() => { setState(state + 1); }}>NEXT</button></div>
+          <div id="button"><button onClick={() => { setState(state + 1); }}>NEXT</button></div>
 
           {/* segundo botão */}
 
