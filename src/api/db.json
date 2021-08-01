@@ -1,17 +1,26 @@
- {
+{
     "persons": [
         {
-            "id": "1",
-            "job": "dev-web",
-            "name": "Luiza",
-            "job2": "dev-mobile",
-            "name2": "Morgan",
-            "job3": "devops",
-            "name3": "Arthur",
-            "job4": "laywer",
-            "name4": "Elton",
-            "job5": "streamer",
-            "name5": "Jonathan"
+            "1": {
+                "jobs": "dev-web",
+                "name": "Luiza"
+            },
+            "2": {
+                "job": "dev-mobile",
+                "name": "Morgan"
+            },
+            "3": {
+                "job": "devops",
+                "name": "Arthur"
+            },
+            "4": {
+                "name": "Elton",
+                "job": "laywer"
+            },
+            "5": {
+                "name": "Jonathan",
+                "job": "streamer"
+            }
         }
     ]
 }
