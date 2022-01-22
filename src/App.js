@@ -14,43 +14,37 @@ const Project = () => {
 
   return (
     <>
-      {stateapi.map((res) => {
-        return (
-          <section id="container">
-            <div id="img">{image}</div>
-            <div id="name">
-              <h1>{name}</h1>
-            </div>
-            <div id="job">
-              <h1>{job}</h1>
-            </div>
-            <header id="container2">
-              {/* primeiro botão */}
-              <div id="button">
-                <button
-                  onClick={() => {
-                    setState(state + 1);
-                  }}
-                >
-                  NEXT
-                </button>
-              </div>
-              {/* segundo botão */}
-              <div id="button">
-                {" "}
-                <button
-                  onClick={() => {
-                    setState(state - 1);
-                  }}
-                >
-                  {" "}
-                  PREV
-                </button>
-              </div>
-            </header>
-          </section>
-        );
-      })}
+      <section id="container">
+        <div id="img">{image}</div>
+        <div id="name">
+          <h1>{name}</h1>
+        </div>
+        <div id="job">
+          <h1>{job}</h1>
+        </div>
+        <header id="container2">
+          {/* primeiro botão */}
+          <div id="button">
+            <button
+              onClick={() => {
+                setState(state + 1);
+              }}
+            >
+              NEXT
+            </button>
+          </div>
+          {/* segundo botão */}
+          <div id="button">
+            <button
+              onClick={() => {
+                setState(state - 1);
+              }}
+            >
+              PREV
+            </button>
+          </div>
+        </header>
+      </section>
     </>
   );
 };
